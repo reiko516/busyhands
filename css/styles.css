@@ -1,0 +1,310 @@
+/*
+Project Name: Busy Hands
+Client: Me!
+Designer: Me!
+*/
+
+/*---------------------------------------
+			GLOBAL STYLES
+----------------------------------------*/
+
+body {
+	background: url("../images/bg_body.jpg");
+	color: #333;
+	font-size: 12px;
+}
+
+a {
+	color: #1fa2e1;
+	text-decoration: none;
+}
+
+/*---------------------------------------
+			STYLING HACKS
+----------------------------------------*/
+
+#cta:after,
+#footerColumns:after,
+#globalFooter:after,
+#globalHeader:after,
+#globalHeader h1#logo:after,
+#globalHeader #listSocial ul:after,
+#globalNav:after,
+#main:after {
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ line-height: 0;
+ visibility: hidden;
+}
+
+* {
+	-moz-box-sizing: border-box; /* Firexfox */
+	-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+	box-sizing: border-box; /* IE */
+}
+
+/*---------------------------------------
+			LAYOUT STYLES
+----------------------------------------*/
+
+#globalFooter,
+#globalHeader,
+#globalNav,
+#main {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#wrapNav {
+	background: #000;
+}
+
+#wrapper {
+	background: url("../images/bg_wrapper.png") repeat-x;
+}
+
+#wrapFooter {
+	background: #000;
+}
+
+
+/*---------------------------------------
+		TYPOGRAPHIC STYLES
+----------------------------------------*/
+
+
+
+
+/*---------------------------------------
+			NAVIGATION
+----------------------------------------*/
+
+#globalNav ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#globalNav ul li a {
+	color: #ccc;
+	display: block;
+	font-size: 16px;
+	padding: 33px 15px;
+}
+
+#globalNav ul li a:hover{
+	background: url("../images/bg_nav_rollover.png") repeat-x;
+	color: #1fa2e1;
+}
+
+
+/*---------------------------------------
+			HEADER (LOGO)
+----------------------------------------*/
+
+h1#logo,
+h1#logo a,
+#globalHeader #listSocial,
+#globalHeader #listSocial ul li,
+#globalNav ul li {
+	float: left;
+}
+
+h1#logo,
+h1#logo a {
+	height: 54px;
+	margin-top: 17px; 
+	width: 291px;
+}
+
+h1#logo a {
+	background: url("../images/logo.png") no-repeat;
+}
+
+h1#logo a,
+#globalHeader #listSocial ul li {
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+
+/*---------------------------------------
+			SOCIAL LINKS
+----------------------------------------*/
+
+#globalHeader #listSocial {
+	position: relative;
+	left: 40%;
+	width: 300px;
+}
+
+#globalHeader #listSocial ul li a {
+	display: block;
+	height: 48px;
+	margin: 25px 15px 25px 0px;
+	width: 48px;
+}
+
+#listSocial li.linkedin a {
+	background: url("../images/socialNav.png") no-repeat -8px -67px;
+}
+
+#listSocial li.linkedin a:hover {
+	background: url("../images/socialNav.png") no-repeat -8px -7px;
+}
+
+#listSocial li.twitter a {
+	background: url("../images/socialNav.png") no-repeat -67px -67px;
+}
+
+#listSocial li.twitter a:hover {
+	background: url("../images/socialNav.png") no-repeat -67px -7px;
+}
+
+#listSocial li.facebook a {
+	background: url("../images/socialNav.png") no-repeat -126px -67px;
+}
+
+#listSocial li.facebook a:hover {
+	background: url("../images/socialNav.png") no-repeat -126px -7px;
+}
+
+#listSocial li.rss a {
+	background: url("../images/socialNav.png") no-repeat -183px -67px;
+}
+
+#listSocial li.rss a:hover {
+	background: url("../images/socialNav.png") no-repeat -183px -7px;
+}
+
+
+/*---------------------------------------
+		MAIN CONTENT STYLES
+----------------------------------------*/
+
+
+#banner {
+	background:  url("../images/shadow_slider.png") no-repeat;
+	background-position: 0% 100%;
+	height: 420px;
+}
+
+#cta  {
+	border-style: inset;
+	border-width: 1px;
+	font-size: 18px;
+	margin-top: 20px;
+	width: 960px;
+}
+
+#cta p,
+#cta .quote-button {
+	float: left;
+}
+
+#cta p {
+	margin: 0px;
+	padding: 15px;
+	width: 700px;
+}
+
+#cta .quote-button {
+	background: url("../images/button_blurb.png") no-repeat;
+	height: 50px;
+	left: 40px;
+	margin: 15px 0px;
+	overflow: hidden;
+	position: relative;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 202px;
+}
+
+
+/*---------------------------------------
+			MAIN CONTENT BOXES
+----------------------------------------*/
+
+#main h2 {
+	font-size: 22px;
+	font-weight: normal;
+}
+
+#main .box1,
+#main .box2,
+#main .box3 {
+	float: left;
+	margin-bottom: 20px;
+	width: 30%;
+}
+
+#main .box1,
+#main .box2 {
+	margin-right: 40px;
+}
+
+#main .box-img {
+	border: 7px solid #e6e6e6;
+}
+
+
+/*---------------------------------------
+			FOOTER
+----------------------------------------*/
+
+#globalFooter .column1,
+#globalFooter .column2,
+#globalFooter .column3 {
+	float: left;
+	margin-right: 40px;
+}
+
+#globalFooter .column1,
+#globalFooter .column3 {
+	width: 200px;
+}
+
+#globalFooter .column2 {
+	width: 400px;
+}
+
+#globalFooter h3 {
+	color: #bdbdbd;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 60px 0px 10px 0px;
+}
+
+#globalFooter h3,
+#globalFooter ul li {
+	border-bottom: 1px solid #424242;
+	text-decoration: none;
+}
+
+#globalFooter ul {
+	list-style: none;
+	list-style-image: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#globalFooter ul li {
+	padding: 10px 0px;
+}
+
+#globalFooter ul li a {
+	color: #424242;
+}
+
+#bottomInfo p {
+	display: inline-block;
+	padding: 40px 0px;
+}
+
+#companyBottom {
+	position: relative;
+	left: 580px;
+}
